@@ -5,14 +5,14 @@
         margin: 200px auto;
 
     }
-    img{
+    .img{
         border-radius: 20px;
     }
-    span{
+    .imgBlock{
         display: none;
         
     }
-    span.active{
+    .imgBlock.active{
         display: block;
     }
     .buttons{
@@ -22,13 +22,13 @@
         justify-content: space-between;
         width: 100%;
     }
-    button{
+    .btn{
         background-color: #00000050;
         border: none;
         padding: 10px;
         color: #fff;
     }
-    button:hover{
+    .btn:hover{
         background-color: #00000080;
     }
     .indicators {
@@ -42,7 +42,7 @@
     gap: 6px;
     z-index: 2;
     width: auto; 
-}
+    }
     .indicator {
       height: 4px;
       width:36px ;

@@ -9,23 +9,23 @@
 </head>
 <body>
     <div class="carousel">
-        <span class="active">
-            <img src="https://picsum.photos/id/1018/400/250" >
+        <span class="active imgBlock">
+            <img class="img" src="https://picsum.photos/id/1018/400/250" >
             <h2 class="headings">Image1</h2>
         </span>
-        <span>
-            <img src="https://picsum.photos/id/1015/400/250">
+        <span class="imgBlock">
+            <img class="img" src="https://picsum.photos/id/1015/400/250">
             <h2 class="headings">Image2</h2>
         </span>
-        <span>
-            <img src="https://picsum.photos/id/1016/400/250">
+        <span class="imgBlock">
+            <img class="img" src="https://picsum.photos/id/1016/400/250">
             <h2 class="headings">Image3</h2>
         </span>
     <div class="buttons">
-      <button id="prev">❮</button>
-      <button id="next">❯</button>
+      <button class="btn" id="prev" onclick="previous()">❮</button>
+      <button class="btn" id="next" onclick="next()">❯</button>
     </div>
-    <div class="indicators">
+    <div class="indicators" onclick="indicator(event)">
       <div class="indicator active" id="0"></div>
       <div class="indicator" id="1"></div>
       <div class="indicator" id="2"></div>
