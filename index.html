@@ -59,22 +59,37 @@
     .indicator.active{
         background-color: #fff;
     }
+    .headings{
+        position: absolute;
+        bottom: 15px;
+        left: 40%;
+        color: #fff;
+    }
     </style>
     <script src="index.js" defer></script>
 </head>
 <body>
     <div class="carousel">
-    <img src="https://picsum.photos/id/1018/400/250" class="active">
-    <img src="https://picsum.photos/id/1015/400/250">
-    <img src="https://picsum.photos/id/1016/400/250">
+        <div>
+            <img src="https://picsum.photos/id/1018/400/250" class="active">
+            <h2 class="headings">Image1</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/1015/400/250">
+            <h2 class="headings">Image2</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/id/1016/400/250">
+            <h2 class="headings">Image3</h2>
+        </div>
     <div class="buttons">
       <button id="prev">❮</button>
       <button id="next">❯</button>
     </div>
     <div class="indicators">
-      <div class="indicator active" data-index="0"></div>
-      <div class="indicator" data-index="1"></div>
-      <div class="indicator" data-index="2"></div>
+      <div class="indicator active" id="0"></div>
+      <div class="indicator" id="1"></div>
+      <div class="indicator" id="2"></div>
     </div>
 </div>
 </body>
