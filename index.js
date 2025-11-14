@@ -7,12 +7,8 @@ const showImage=(i)=>{
     images[i%images.length].classList.add('active');
     indi[i%indi.length].classList.add('active');
 }
-function previous(){
-    index=(index-1+images.length)%images.length;
-    showImage(index);
-}
-function next(){
-    index=(index+1)%images.length;
+function toggleSlide(val){
+    index=val === 1 ? (index+1)%images.length : (index-1+images.length)%images.length;
     showImage(index);
 }
 function indicator(event){
