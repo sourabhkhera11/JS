@@ -50,5 +50,6 @@ const ele=document.querySelector(".indicators");
 ele.addEventListener("click",(e)=>{
     const imgNo=e.target.id;
     console.log(imgNo);
+    index=imgNo;
     showImage(imgNo);
 })
