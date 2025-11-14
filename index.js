@@ -1,4 +1,4 @@
-const images=document.querySelectorAll('.carousel img');
+const images=document.querySelectorAll('.carousel span');
 console.log(images);
 
 const prev=document.getElementById("prev");
@@ -35,11 +35,13 @@ const showImage=(i)=>{
 
 prev.addEventListener("click",()=>{
     index=(index-1+images.length)%images.length;
+    console.log(index);
     showImage(index);
 })
 
 next.addEventListener("click",()=>{
     index=(index+1)%images.length;
+    console.log(index);
     showImage(index);
 })
 
